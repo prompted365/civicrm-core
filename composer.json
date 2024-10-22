@@ -111,6 +111,9 @@
     "pontedilana/php-weasyprint": "^0.13.0 || ^1",
     "knplabs/knp-snappy": "^1.4"
   },
+  "require-dev": {
+    "civicrm/civicrm-core": "*"
+  },
   "scripts": {
     "post-install-cmd": [
       "bash tools/scripts/composer/dompdf-cleanup.sh",

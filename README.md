@@ -21,6 +21,29 @@ https://civicrm.org/download
 
 Detailed installation instructions can be found [in our sysadmin guide](https://docs.civicrm.org/sysadmin/en/latest/).
 
+### Docker Setup
+
+To set up CiviCRM using Docker, follow these steps:
+
+1. Install Docker on your system. You can find the installation instructions for your operating system on the [Docker website](https://docs.docker.com/get-docker/).
+
+2. Clone the CiviCRM repository:
+
+   ```sh
+   git clone https://github.com/civicrm/civicrm-core.git
+   cd civicrm-core
+   ```
+
+3. Build and start the Docker containers:
+
+   ```sh
+   docker-compose up --build
+   ```
+
+4. Access the CiviCRM application in your web browser at `http://localhost:8080`.
+
+5. Follow the on-screen instructions to complete the installation.
+
 
 Documentation
 -------------
@@ -47,3 +70,18 @@ questions and ideas in the [Developer Discussion room](https://chat.civicrm.org/
 Installing the latest developmental code requires some [special steps](https://docs.civicrm.org/dev/en/latest/tools/git/). 
 
 Report all issues to CiviCRM via GitLab: https://lab.civicrm.org/dev/core
+
+### Running the Application using Docker
+
+To run the CiviCRM application using Docker, follow these steps:
+
+1. Start the Docker containers:
+
+   ```sh
+   docker-compose up
+   ```
+
+2. Access the CiviCRM application in your web browser at `http://localhost:8080`.
+
+3. Follow the on-screen instructions to complete the installation.
+
